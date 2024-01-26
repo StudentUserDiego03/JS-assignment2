@@ -4,12 +4,18 @@
         <script>
             const tax = 150;
             let statement = "Be sure to check other instruments";
+
             function myFunction(){
             const guitar={strings:"seven", color: "red", price: 300, brand: "Fender"};
             let finalPrice = guitar.price + tax;
             document.getElementById("guitarPrice").innerHTML= guitar.color + " " + guitar.strings + " string "
             + guitar.brand + " guitar:" + "<br>" + "initial price: $" + guitar.price + "<br>" + "Tax: $" + tax + "<br>" +
             "Final Price: $" + finalPrice + "<br>" + "<br>" + statement;  
+            }
+
+            function otherFunction(){
+                const bass = {bassBrand:"Fender", bassPrice: 200};
+                document.getElementById("bassPrice").innerHTML= tax;
             }
   
 
@@ -20,9 +26,13 @@
 
     <body>
         <h1>JavaScript program</h1>
-        <h2>Price checking:</h2>
+        <h2>Guitar Price-checking:</h2>
         <button type="button" onclick="myFunction()">Check the price <br> for Red seven string guitar</button>
         <p id ="guitarPrice"></p>
+
+        <h2>Bass guitar Price-checking:</h2>
+        <button type="button" onclick="otherFunction()">Check the price <br> for Bass guitar</button>
+        <p id ="bassPrice"></p>
 
         
     
