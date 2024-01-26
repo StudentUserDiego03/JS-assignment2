@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <script>
+            function myFunction(){
+            const guitar={strings:"seven", color: "red", price: 300, brand: "Fender"};
+            const tax = 150;
+            let finalPrice = guitar.price + tax;
+            document.getElementById("guitarPrice").innerHTML= guitar.color + " " + guitar.strings + " string "
+            + guitar.brand + " guitar:" + "<br>" + "initial price: $" + guitar.price + "<br>" + "Tax: $" + tax + "<br>" +
+            "Final Price: $" + finalPrice;  
+            }
+        </script> 
+    </head>
+
+    <body>
+        <h1>JavaScript program</h1>
+        <h2>Step one:</h2>
+        <button type="button" onclick="myFunction()">Check the price <br> for Red seven string guitar</button>
+        <p id ="guitarPrice"></p>
+
+        
+    
+
+
+
+
+    </body> 
