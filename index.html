@@ -15,7 +15,9 @@
 
             function otherFunction(){
                 const bass = {bassBrand:"Fender", bassPrice: 200};
-                document.getElementById("bassPrice").innerHTML= tax;
+                finalPrice = bass.bassPrice + tax;
+                document.getElementById("bassPrice").innerHTML= bass.bassBrand + " Bass guitar:" + "<br>" + "initial price: $"
+                + bass.bassPrice + "<br>" + "Tax: $" + tax + "<br>" + "Final Price: $" + finalPrice + "<br>" + statement; 
             }
   
 
